@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="16dp"
+    android:background="#121212">
+
+    <!-- Dropdown (Spinner) for Selecting Sorting Algorithm -->
+    <Spinner
+        android:id="@+id/algorithmSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/darker_gray"
+        android:textColor="@android:color/white"
+        android:padding="8dp" />
+
+    <!-- TextView to Display Time Complexity -->
+    <TextView
+        android:id="@+id/complexityView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Best: O(?) | Average: O(?) | Worst: O(?)"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        android:gravity="center"
+        android:padding="8dp" />
+
+    <!-- Button to Start Sorting -->
+    <Button
+        android:id="@+id/startSortingBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Start Sorting"
+        android:backgroundTint="@android:color/holo_blue_light"
+        android:textColor="@android:color/white"
+        android:padding="12dp"
+        android:layout_marginTop="8dp" />
+
+    <!-- Sorting Visualizer Custom View -->
+    <com.example.technicalvisualizer.sortingVisualizer
+        android:id="@+id/sortingVisualizer"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:layout_marginTop="16dp" />
+
+</LinearLayout>

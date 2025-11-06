@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="16dp"
+    android:background="#121212">
+
+    <!-- Dropdown for Searching Algorithm Selection -->
+    <Spinner
+        android:id="@+id/searchingAlgorithmSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/darker_gray"
+        android:textColor="@android:color/white"
+        android:padding="8dp" />
+
+    <!-- Input for Search Key -->
+    <EditText
+        android:id="@+id/searchKey"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter number to search"
+        android:inputType="number"
+        android:textColor="@android:color/white"
+        android:padding="8dp" />
+
+    <!-- Button to Start Searching -->
+    <Button
+        android:id="@+id/startSearchingBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Start Searching"
+        android:backgroundTint="@android:color/holo_blue_light"
+        android:textColor="@android:color/white"
+        android:padding="12dp"
+        android:layout_marginTop="8dp" />
+
+    <!-- Searching Visualizer -->
+    <com.example.technicalvisualizer.searchingVisualizer
+        android:id="@+id/searchingVisualizer"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:layout_marginTop="16dp" />
+</LinearLayout>
